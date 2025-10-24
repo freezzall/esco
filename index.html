@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+          <!-- Menu Toggle untuk Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+              <img src="images/logo2.png" alt="Company Logo">
+          </a>
+          
+          <!-- Search Icon untuk Mobile -->
+          <div class="d-lg-none ms-auto">
+              <button class="btn btn-link" id="mobileSearchBtn">
+                  <i class="fas fa-search"></i>
+              </button>
+          </div>
+          
+          <!-- Menu Items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="qaqc.html">QA/QC Management</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="hse.html">HSE Policy</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                          Products
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="silica-sand.html">Silica Sand</a></li>
+                          <li><a class="dropdown-item" href="quartz-sand.html">Quartz Sand</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="location.html">Site Location</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+              
+              <!-- Search Icon untuk Desktop -->
+              <div class="d-none d-lg-block">
+                  <button class="btn btn-link" id="desktopSearchBtn">
+                      <i class="fas fa-search"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3>Search</h3>
+              <button class="btn btn-close" id="closeSearchBtn"></button>
+          </div>
+          <div class="input-group mb-3">
+              <input type="text" class="form-control form-control-lg" id="searchInput" placeholder="Type to search...">
+              <button class="btn btn-primary" type="button" id="searchButton">
+                  <i class="fas fa-search"></i>
+              </button>
+          </div>
+          <div class="search-results" id="searchResults"></div>
+      </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+      <div class="container">
+          <h1 class="display-3 fw-bold mb-4">
+            “Excelling at every stage of the process, from pit to port.”
+          </h1>
+      </div>
+  </section>
+
+    <!-- About Us Section -->
+    <section class="section-padding">
+        <div class="container text-center">
+          <h1 class="display-4 fw-bold mb-4">
+            Excellence in Quality
+          </h1>
+          <p>
+            Esco Resources Limited serves as Group’s international trading powerhouse for silica sand and quartz stone. It is strategically headquartered in Hong Kong to oversee global trade execution, manage key client relationships, and ensure seamless contract fulfillment with precision and reliability. The company plays a pivotal role in market expansion, supply chain optimization, and the development of strategic partnerships across Asia, Europe, and other global markets. With extensive industry expertise and a steadfast commitment to operational excellence, Esco Resources Limited bridges international demand with consistent, high-quality resource supply.
+          </p>
+          <img src="images/hex.png" alt="HSE Policy" class="img-fluid">
+        </div>
+    </section>
+    
+
+    <!-- Products Section -->
+    <section id="products" class="section-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h1 class="display-5 fw-bold">Products</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <img src="images/silica.png" class="img-fluid">
+                            </div>
+                            <h4 class="card-title fw-bold mb-5">Silica Sand</h4>
+                            <p class="card-text">
+                              The rising demand for silica sand in the construction and glass industries is driving increased trading activities, necessitating compliance with industry quality standards, while the expansion into global markets creates new opportunities for suppliers and buyers.
+                            </p>
+                          <a href="#more" class="btn btn-light w-100">Product Catalogue</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                  <div class="card h-100 text-center border-0 shadow-sm">
+                      <div class="card-body">
+                          <div class="mb-3">
+                            <img src="images/quartz.png" class="img-fluid">
+                          </div>
+                          <h4 class="card-title fw-bold mb-4">Quartz Chips 
+                            and Powder</h4>
+                          <p class="card-text">
+                            Our product purity and consistency to meet client standards, and effective supply chain management is crucial for timely delivery and maintaining quality. Quartz chips and powders are used in various applications, contributing to increased demand across multiple industries.
+                          </p>
+                          <a href="#more" class="btn btn-light w-100">Product Catalogue</a>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                              <img src="images/plant.png" class="img-fluid">
+                            </div>
+                            <h4 class="card-title fw-bold mb-4">Washing, Processing and Purification Plant</h4>
+                            <p class="card-text">
+                              Our dedicated team of experts provides end-to-end solutions and services for silica sand and quartz beneficiation from greenfield, laboratory and plant design at every stage of your process, to the supply of required equipment, installation, production support, and spare parts.</p>
+                            <a href="#more" class="btn btn-light w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                              <img src="images/services.png" class="img-fluid">
+                            </div>
+                            <h4 class="card-title fw-bold mb-4">Single Supply
+                              and Services</h4>
+                            <p class="card-text">Tailored solutions designed to optimize your existing production line, enhancing both production output and product quality.</p>
+                            <br><br>
+                            <br><br>
+                            <br>
+                            <a href="#more" class="btn btn-light w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Location Section -->
+    <section class="section-location">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+              <h1 class="display-5 fw-bold">Site Location</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/silicasand.png" class="img-fluid">
+            <p class="mt-3">Silica Sand</p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/quartzrock.png" class="img-fluid">
+            <p class="mt-3">Quartz Rock</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+    <!-- HSE Policy Section -->
+    <section id="hse" class="section-hse">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-5 mt-5">
+                <img src="images/hse.png" alt="HSE Policy" class="img-fluid">
+              </div>
+                <div class="col-md-7 mb-4 mt-5">
+                    <h2 class="display-4 fw-bold mb-4">Health, Safety and Environment Policy</h2>
+                    <p class="mb-4">Creating internal policies for health, safety, and environmental management in quartz and silica mining operations is essential for ensuring compliance and fostering a proactive safety culture. Here are example statements that can be included in internal policies.</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7 mb-4 mt-5">
+                  <h2 class="display-5 fw-bold mb-4">Corporate Social Responsibility</h2>
+                  <p class="mb-4">"Our commitment to responsible quartz rock and silica sand mining goes beyond extraction; we actively engage with local communities to ensure that our operations contribute positively to their socio-economic development."</p>
+              </div>
+              <div class="col-md-5 mt-5">
+                  <img src="images/sosial.png" alt="HSE Policy" class="img-fluid">
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="section-contact">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+              <h1 class="display-5 fw-bold">Contact Us</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="mb-3">
+              <img src="images/china.png" class="img-fluid mb-4">
+            </div>
+            <b class="mt-3">China</b>
+            <p class="mt-3">Chinaweal Centre, 
+              414-424 Jaffe Road, 
+              18/F, Causeway Bay, 
+              Hong Kong</p>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <img src="images/indo.png" class="img-fluid mb-4">
+            </div>
+            <b class="mt-3">Indonesia</b>
+            <p class="mt-3">
+              Jl. Ciledug Raya No.69DB, RT.6/RW.1, Cipulir, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12230 </p>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-3">
+              <img src="images/eropa.png" class="img-fluid mb-4">
+            </div>
+            <b class="mt-3">Europe Zone</b>
+            <p class="mt-3">5 Ashburn Road, 
+              Milngavie, Glasgow</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 text-center mb-3 mt-5">
+            <a href="contact.html" class="btn btn-dark w-100">For More Details</a>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 mb-5">
+                <img src="images/logo.png" class="img-fluid" width="60px"/>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                    <a href="about.html" class="text-white"><b>About Us</b></a>
+                    <p class="mt-3">Core Values</p>
+                    <p>Main Site Location</p>
+                    <p>Corporate Structure</p>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                  <a href="qaqc.html" class="text-white"><b>QA/QC Management</b></a>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                  <a href="hse.html" class="text-white"><b>HSE Policy</b></a>
+                
+                  <p class="mt-3">Safety Induction</p>
+                  <p>Green Sustainability</p>
+                  <p>Waste Water Treatment</p>
+                  <p>CSR</p>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                  <p><b>Products</b></p>
+                  <a href="silica-sand.html" class="text-white">Silica Sand</a>
+                  <br>
+                  <a href="quartz-sand.html" class="text-white" >Quartz Sand</a>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                  <a href="location.html" class="text-white"><b>Site Location</b></a>
+                </div>
+
+                <div class="col-lg-2 mb-4 mb-lg-0">
+                  <a href="contact.html" class="text-white"><b>Contact Us</b></a>
+                </div>
+                
+                
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright">Copyright : &copy; 2025 ESCO INTERNATIONAL. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+</body>
+</html>
