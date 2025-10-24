@@ -5,6 +5,12 @@
     --active-color: #2a3376; /* Biru tua untuk active state */
 }
 
+
+    html, body {
+      overflow-x: hidden; /* cegah geser horizontal */
+      width: 100%;
+    }
+
 .navbar {
     transition: var(--navbar-transition);
     padding: 15px 0;
